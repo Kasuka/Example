@@ -4,8 +4,7 @@ class Example
 {
     static void Main()
     {
-        int x;
-        int y;
+        int x, y;
 
         x = 100;
 
