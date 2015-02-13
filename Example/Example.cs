@@ -1,24 +1,14 @@
 ﻿using System;
 
-class Example3
+class Circle
 {
     static void Main()
     {
-        int iVar;
-        double dVar;
+        double radius;
+        double area;
+        radius = 10.0;
+        area = radius * radius * 3.141592;
 
-        iVar = 100;
-        dVar = 100.0;
-
-        Console.WriteLine("Original value of iVar: " + iVar);
-        Console.WriteLine("Original value of dVar: " + dVar);
-
-        Console.WriteLine();
-
-        iVar = iVar / 3;
-        dVar = dVar / 3.0;
-
-        Console.WriteLine("iVar after division: " + iVar);
-        Console.WriteLine("dVar after division: " + dVar);
+        Console.WriteLine("Area is " + area);
     }
 }
