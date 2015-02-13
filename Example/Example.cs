@@ -1,17 +1,24 @@
 ﻿using System;
 
-class Example
+class Example3
 {
     static void Main()
     {
-        int x, y;
+        int iVar;
+        double dVar;
 
-        x = 100;
+        iVar = 100;
+        dVar = 100.0;
 
-        Console.WriteLine("x contains " + x);
-        y = x / 2;
+        Console.WriteLine("Original value of iVar: " + iVar);
+        Console.WriteLine("Original value of dVar: " + dVar);
 
-        Console.Write("y contains x / 2:");
-        Console.WriteLine(y);
+        Console.WriteLine();
+
+        iVar = iVar / 3;
+        dVar = dVar / 3.0;
+
+        Console.WriteLine("iVar after division: " + iVar);
+        Console.WriteLine("dVar after division: " + dVar);
     }
 }
