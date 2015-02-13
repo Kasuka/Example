@@ -12,7 +12,7 @@ class Example
         Console.WriteLine("x contains " + x);
         y = x / 2;
 
-        Console.Write("y contains x / 2");
+        Console.Write("y contains x / 2:");
         Console.WriteLine(y);
     }
 }
