@@ -1,7 +1,18 @@
-﻿class Example
+﻿using System;
+
+class Example
 {
     static void Main()
     {
-        System.Console.WriteLine("A Simple C# Program.");
+        int x;
+        int y;
+
+        x = 100;
+
+        Console.WriteLine("x contains " + x);
+        y = x / 2;
+
+        Console.Write("y contains x / 2");
+        Console.WriteLine(y);
     }
 }
