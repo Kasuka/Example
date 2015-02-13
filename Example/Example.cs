@@ -1,9 +1,7 @@
-﻿using System;
-
-class Example
+﻿class Example
 {
     static void Main()
     {
-        Console.WriteLine("A simple C# program.");
+        System.Console.WriteLine("A Simple C# Program.");
     }
 }
