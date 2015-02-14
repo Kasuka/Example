@@ -1,23 +1,14 @@
 ﻿using System;
 
-class ProdSum
+class IdTest
 {
     static void Main()
     {
-        int prod;
-        int sum;
-        int i;
+        int @if;
 
-        sum = 0;
-        prod = 1;
-
-        for (i = 1; i <= 10; i++)
+        for (@if = 0; @if < 10; @if++)
         {
-            sum += i;
-            prod *= i;
+            Console.WriteLine("@if is " + @if);
         }
-
-        Console.WriteLine("Sum is " + sum);
-        Console.WriteLine("Product is " + prod);
     }
 }
