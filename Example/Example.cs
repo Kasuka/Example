@@ -6,7 +6,7 @@ class ForDemo
     {
         int count;
 
-        for (count = 0; count < 5; count = count + 1)
+        for (count = 0; count < 5; count++)
         {
             Console.WriteLine("This is count: " + count);
         }
