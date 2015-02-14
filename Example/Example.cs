@@ -1,16 +1,19 @@
 ﻿using System;
 
-class ForDemo
+class BlockDemo
 {
     static void Main()
     {
-        int count;
+        int i, j, d;
 
-        for (count = 0; count < 5; count++)
+        i = 5;
+        j = 10;
+
+        if (i != 0)
         {
-            Console.WriteLine("This is count: " + count);
+            Console.WriteLine("i does not equal zero.");
+            d = j / i;
+            Console.WriteLine("j / i is  " + d);
         }
-
-        Console.WriteLine("Done.");
     }
 }
