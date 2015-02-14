@@ -1,19 +1,23 @@
 ﻿using System;
 
-class BlockDemo
+class ProdSum
 {
     static void Main()
     {
-        int i, j, d;
+        int prod;
+        int sum;
+        int i;
 
-        i = 5;
-        j = 10;
+        sum = 0;
+        prod = 1;
 
-        if (i != 0)
+        for (i = 1; i <= 10; i++)
         {
-            Console.WriteLine("i does not equal zero.");
-            d = j / i;
-            Console.WriteLine("j / i is  " + d);
+            sum += i;
+            prod *= i;
         }
+
+        Console.WriteLine("Sum is " + sum);
+        Console.WriteLine("Product is " + prod);
     }
 }
