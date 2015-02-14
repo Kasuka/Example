@@ -1,14 +1,42 @@
 ﻿using System;
 
-class Circle
+class IfDemo
 {
     static void Main()
     {
-        double radius;
-        double area;
-        radius = 10.0;
-        area = radius * radius * 3.141592;
+        int a, b, c;
 
-        Console.WriteLine("Area is " + area);
+        a = 2;
+        b = 3;
+
+        if (a < b)
+        {
+            Console.WriteLine(" a is less than b.");
+        }
+
+        if (a == b)
+        {
+            Console.WriteLine("You won't see this.");
+        }
+
+        Console.WriteLine();
+
+        c = a - b;
+
+        Console.WriteLine("c contains -1.");
+
+        if (c >= 0)
+            Console.WriteLine("c is non-negative.");
+        if (c < 0)
+            Console.WriteLine("c is negative.");
+
+        Console.WriteLine();
+
+        c = b - a;
+        Console.WriteLine("c contains 1.");
+        if (c >= 0)
+            Console.WriteLine("c is non-negative.");
+        if (c < 0)
+            Console.WriteLine("c is negative.");
     }
 }
