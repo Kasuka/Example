@@ -1,42 +1,16 @@
 ﻿using System;
 
-class IfDemo
+class ForDemo
 {
     static void Main()
     {
-        int a, b, c;
+        int count;
 
-        a = 2;
-        b = 3;
-
-        if (a < b)
+        for (count = 0; count < 5; count = count + 1)
         {
-            Console.WriteLine(" a is less than b.");
+            Console.WriteLine("This is count: " + count);
         }
 
-        if (a == b)
-        {
-            Console.WriteLine("You won't see this.");
-        }
-
-        Console.WriteLine();
-
-        c = a - b;
-
-        Console.WriteLine("c contains -1.");
-
-        if (c >= 0)
-            Console.WriteLine("c is non-negative.");
-        if (c < 0)
-            Console.WriteLine("c is negative.");
-
-        Console.WriteLine();
-
-        c = b - a;
-        Console.WriteLine("c contains 1.");
-        if (c >= 0)
-            Console.WriteLine("c is non-negative.");
-        if (c < 0)
-            Console.WriteLine("c is negative.");
+        Console.WriteLine("Done.");
     }
 }
