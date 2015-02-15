@@ -6,7 +6,7 @@ class Trigonometry
     {
         Double theta;
 
-        for (theta = 0.1; theta <= 1.0; theta = theta + 1)
+        for (theta = 0.1; theta <= 1.0; theta = theta + 0.1)
         {
             Console.WriteLine("Sine of " + theta + " is " + Math.Sin(theta));
             Console.WriteLine("Cosine of " + theta + " is " + Math.Cos(theta));
