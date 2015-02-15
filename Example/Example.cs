@@ -1,14 +1,16 @@
 ﻿using System;
 
-class IdTest
+class inches
 {
     static void Main()
     {
-        int @if;
+        long inches;
+        long miles;
 
-        for (@if = 0; @if < 10; @if++)
-        {
-            Console.WriteLine("@if is " + @if);
-        }
+        miles = 93000000;
+
+        inches = miles * 5280 * 12;
+
+        Console.WriteLine("Distance to the sun: " + inches + " inches.");
     }
 }
