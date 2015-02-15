@@ -1,16 +1,15 @@
 ﻿using System;
 
-class Use_byte
+class FindRadius
 {
     static void Main()
     {
-        byte x;
-        int sum;
+        Double r;
+        Double area;
 
-        sum = 0;
-        for (x = 1; x <= 100; x++)
-            sum += x;
+        area = 10.0;
 
-        Console.WriteLine("Summation of 100 is " + sum);
+        r = Math.Sqrt(area / 3.1416);
+        Console.WriteLine("Radius is " + r);
     }
 }
