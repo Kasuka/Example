@@ -1,16 +1,16 @@
 ﻿using System;
 
-class inches
+class Use_byte
 {
     static void Main()
     {
-        long inches;
-        long miles;
+        byte x;
+        int sum;
 
-        miles = 93000000;
+        sum = 0;
+        for (x = 1; x <= 100; x++)
+            sum += x;
 
-        inches = miles * 5280 * 12;
-
-        Console.WriteLine("Distance to the sun: " + inches + " inches.");
+        Console.WriteLine("Summation of 100 is " + sum);
     }
 }
