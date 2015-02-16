@@ -1,27 +1,23 @@
 ﻿using System;
 
-class FutVal
+class BoolDemo
 {
     static void Main()
     {
-        decimal amount;
-        decimal rate_of_return;
-        int years, i;
+        bool b;
 
-        amount = 1000.0M;
+        b = false;
+        Console.WriteLine("b is " + b);
+        b = true;
+        Console.WriteLine("b is " + b);
 
-        rate_of_return = 0.07M;
-        years = 10;
+        if (b)
+            Console.WriteLine("This is executed.");
 
-        Console.WriteLine("Original investment: $" + amount);
-        Console.WriteLine("Rate of return: $" + rate_of_return);
-        Console.WriteLine("Over " + years + " years");
+        b = false;
+        if (b)
+            Console.WriteLine("This is not executed.");
 
-        for (i = 0; i < years; i++)
-        {
-            amount += amount * rate_of_return;
-        }
-
-        Console.WriteLine("Future value is $" + amount);
+        Console.WriteLine("10 > 9 is " + (10 > 9));
     }
 }
