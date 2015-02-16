@@ -1,18 +1,27 @@
 ﻿using System;
 
-class UseDecimal
+class FutVal
 {
     static void Main()
     {
-        decimal price;
-        decimal discount;
-        decimal discounted_price;
+        decimal amount;
+        decimal rate_of_return;
+        int years, i;
 
-        price = 19.95m;
-        discount = 0.15m;
+        amount = 1000.0M;
 
-        discounted_price = price - (price * discount);
+        rate_of_return = 0.07M;
+        years = 10;
 
-        Console.WriteLine("Discounted price: $" + discounted_price);
+        Console.WriteLine("Original investment: $" + amount);
+        Console.WriteLine("Rate of return: $" + rate_of_return);
+        Console.WriteLine("Over " + years + " years");
+
+        for (i = 0; i < years; i++)
+        {
+            amount += amount * rate_of_return;
+        }
+
+        Console.WriteLine("Future value is $" + amount);
     }
 }
