@@ -1,17 +1,18 @@
 ﻿using System;
 
-class Trigonometry
+class UseDecimal
 {
     static void Main()
     {
-        Double theta;
+        decimal price;
+        decimal discount;
+        decimal discounted_price;
 
-        for (theta = 0.1; theta <= 1.0; theta = theta + 0.1)
-        {
-            Console.WriteLine("Sine of " + theta + " is " + Math.Sin(theta));
-            Console.WriteLine("Cosine of " + theta + " is " + Math.Cos(theta));
-            Console.WriteLine("Tangent of " + theta + " is " + Math.Tan(theta));
-            Console.WriteLine();
-        }
+        price = 19.95m;
+        discount = 0.15m;
+
+        discounted_price = price - (price * discount);
+
+        Console.WriteLine("Discounted price: $" + discounted_price);
     }
 }
