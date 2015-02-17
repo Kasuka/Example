@@ -1,16 +1,18 @@
 ﻿using System;
 
-class DisplayOptions
+class UseDecimal
 {
     static void Main()
     {
-        int i;
+        decimal price;
+        decimal discount;
+        decimal discounted_price;
 
-        Console.WriteLine("Value\tSquare\tCubed");
+        price = 19.95m;
+        discount = 0.15m;
 
-        for (i = 1; i < 10; i++)
-        {
-            Console.WriteLine("{0}\t{1}\t{2}", i, i * i, i * i * i);
-        }
+        discounted_price = price - (price * discount);
+
+        Console.WriteLine("Discounted price: {0:C}", discounted_price);
     }
 }
