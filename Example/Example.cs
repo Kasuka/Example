@@ -1,18 +1,13 @@
 ﻿using System;
 
-class UseDecimal
+class StrDemo
 {
     static void Main()
     {
-        decimal price;
-        decimal discount;
-        decimal discounted_price;
+        Console.WriteLine("Line One\nLine Two\nLine Three");
+        Console.WriteLine("One\tTwo\tThree");
+        Console.WriteLine("Four\tFive\tSix");
 
-        price = 19.95m;
-        discount = 0.15m;
-
-        discounted_price = price - (price * discount);
-
-        Console.WriteLine("Discounted price: {0:C}", discounted_price);
+        Console.WriteLine("\"Why?\", he asked.");
     }
 }
