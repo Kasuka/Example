@@ -1,17 +1,16 @@
 ﻿using System;
 
-class Verbatim
+class DynInit
 {
     static void Main()
     {
-        Console.WriteLine(@"This is a verbatim
-string literal
-that spans several lines.
-");
-        Console.WriteLine(@"Here is some tabbed output:
-1   2   3   4
-5   6   7   8
-");
-        Console.WriteLine(@"Programmers say, ""I like C#.""");
+        double s1 = 4.0;
+        double s2 = 5.0;
+
+        double hypot = Math.Sqrt((s1 * s1) + (s2 * s2));
+
+        Console.Write("Hypotenuse of triangle with sides " + s1 + " by " + s2 + " is ");
+
+        Console.WriteLine("{0:#.###}", hypot);
     }
 }
