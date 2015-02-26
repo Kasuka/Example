@@ -1,15 +1,19 @@
 ﻿using System;
 
-class ImplicitlyTypedVar
+class ScopeDemo
 {
     static void Main()
     {
-        var s1 = 4.0;
-        var s2 = 5.0;
+        int x;
+        x = 10;
 
-        var hypot = Math.Sqrt((s1 * s1) + (s2 * s2));
+        if (x == 10)
+        {
+            int y = 20;
+            Console.WriteLine("x and y: " + x + " " + y);
+            x = y * 2;
+        }
 
-        Console.Write("Hypotenuse of triangle with sides " + s1 + " by " + s2 + " is ");
-        Console.WriteLine("{0:#.###}", hypot);
+        Console.WriteLine("x is" + x);
     }
 }
