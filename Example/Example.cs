@@ -1,19 +1,17 @@
 ﻿using System;
 
-class ScopeDemo
+class VarInitDemo
 {
     static void Main()
     {
         int x;
-        x = 10;
 
-        if (x == 10)
+        for (x = 0; x < 3; x++)
         {
-            int y = 20;
-            Console.WriteLine("x and y: " + x + " " + y);
-            x = y * 2;
+            int y = -1;
+            Console.WriteLine("y is " + y);
+            y = 100;
+            Console.WriteLine("y is now " + y);
         }
-
-        Console.WriteLine("x is" + x);
     }
 }
