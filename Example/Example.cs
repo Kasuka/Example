@@ -36,6 +36,10 @@ class CastDemo
         s = (short)u;
         Console.WriteLine("s after assigning 64000: " + s + " -- data lost.");
 
+        l = 64000;
+        u = (uint)l;
+        Console.WriteLine("u after assigning 64000: " + u + " -- no data lost.");
+
         l = -12;
         u = (uint)l;
         Console.WriteLine("u after assigning -12: " + u + " -- data lost.");
