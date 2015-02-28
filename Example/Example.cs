@@ -1,17 +1,15 @@
 ﻿using System;
 
-class VarInitDemo
+class LtoD
 {
     static void Main()
     {
-        int x;
+        long L;
+        double D;
 
-        for (x = 0; x < 3; x++)
-        {
-            int y = -1;
-            Console.WriteLine("y is " + y);
-            y = 100;
-            Console.WriteLine("y is now " + y);
-        }
+        L = 100123285L;
+        D = L;
+
+        Console.WriteLine("L and D: " + L + " " + D);
     }
 }
